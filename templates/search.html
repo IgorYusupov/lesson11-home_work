@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кандидаты по имени</title>
+</head>
+<body>
+    <h1>
+        Найдено кандидатов {{ counter }}
+    </h1>
+    {% for candidate in candidates %}
+        <p>
+            {{ candidate.name }}
+        </p>
+    {% endfor %}
+</body>
+</html>
